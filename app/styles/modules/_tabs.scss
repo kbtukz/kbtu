@@ -1,0 +1,92 @@
+.tab-main {
+  margin-top: 80px;
+  .tab-content {
+    background-color: #000;
+    height: 333px;
+    overflow: visible;
+  }
+  .tab-pane {
+    position: relative;
+  }
+  .nav-tabs {
+    margin-left: auto;
+    border-bottom: 1px solid lighten(#000, 60%);
+    border-bottom: 1px solid rgba(#000, .4);
+    li {
+      width: 33.33%;
+      &.active {
+        position: relative;
+        &:after {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          margin-left: -15px;
+          border-top: 11px solid #000;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          @include content('');
+          @include inline-block(baseline);
+        }
+        .link {
+          span {
+            border-bottom-color: transparent;
+          }
+        }
+      }
+      a {
+        border-width: 0;
+        padding-top: 16px;
+        padding-bottom: 0;
+        @include border-radius(0);
+        &:hover,
+        &:focus {
+          border-width: 0;
+        }
+      }
+    }
+    [class^="icon-custom-"] {
+      vertical-align: middle;
+    }
+  }
+}
+.tab-main-header {
+  font-size: 18px;
+  max-height: 100px;
+  padding: 15px 80px 0;
+  position: absolute;
+  top: -55px;
+  @include border-radius($borderRadiusSmall);
+  @include box-shadow(0 14px 34px -8px #9d8974, inset 0 1px #fffef3);
+  @include gradient-vertical(#f7f6e1, #e1e0c8);
+}
+.tab-main-header-img {
+  float: left;
+  margin-top: -35px;
+  margin-right: 40px;
+}
+.tab-main-header-text {
+  line-height: 24px/$baseLineHeight;
+  overflow: hidden;
+}
+.tab-main-text {
+  float: right;
+  margin-top: 70px;
+  margin-right: 70px;
+  width: percentage(355px/$gridRowWidth);
+}
+.tab-main-title {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  .link {
+    color: #ffa752;
+    span {
+      border-bottom-color: #666;
+    }
+  }
+}
+.tab-main-desc {
+  color: #fff;
+  font-size: 15px;
+}

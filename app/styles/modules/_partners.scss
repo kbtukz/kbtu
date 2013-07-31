@@ -1,0 +1,22 @@
+.partners {
+  font-size: 12px;
+  margin-top: 410px;
+  li:last-child .partner-item {
+    margin-top: 135px;
+  }
+}
+.partners-single {
+  margin-top: -140px;
+}
+.partner-item {
+  margin-bottom: 5px;
+  > .pull-left {
+    margin-right: 12px;
+  }
+}
+.partner-item-text {
+  overflow: hidden;
+}
+.partner-item-desc {
+  margin-bottom: 15px;
+}

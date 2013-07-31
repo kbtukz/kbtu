@@ -1,0 +1,15 @@
+$imgs : sprite-map("sprite-imgs/*.png");
+$icon-name: icon-custom-;
+
+[class^="#{$icon-name}"] {
+  background-image: $imgs;
+  background-repeat: no-repeat;
+  @include inline-block(baseline);
+}
+
+@each $img in sprite_names($imgs) {
+  .#{$icon-name}#{$img} {
+    @include sprite-dimensions($imgs, $img);
+    background-position: sprite-position($imgs, $img);
+  }
+}
