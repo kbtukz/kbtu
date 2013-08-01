@@ -8,6 +8,7 @@
   min-width: $gridRowWidth;
 }
 .header-main {
+  position: relative;
   > .container {
     padding-top: 57px;
   }

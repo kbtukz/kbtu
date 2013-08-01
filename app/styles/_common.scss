@@ -14,9 +14,6 @@
   font-size: 24px;
   line-height: 1.5;
 }
-.hero-unit {
-  
-}
 .copyright {
   color: #818181;
 }
@@ -59,10 +56,13 @@
 }
 .offset-block {
   background-image: image-url('bg-multimedia.jpg');
-  background-size: cover;
   background-repeat: no-repeat;
-  margin-top: -100%;
-  margin-bottom: 50px;
+  top: -343px;
+  padding-top: 343px;
+  position: relative;
+  z-index: -1;
+  margin-bottom: -293px;
+  @include background-size(cover);
 }
 .short-info {
   background: #b53700 image-url('grdnt-short-info.png') no-repeat right bottom;
