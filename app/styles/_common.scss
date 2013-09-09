@@ -64,6 +64,12 @@
   margin-bottom: -293px;
   @include background-size(cover);
 }
+.firefox {
+  .offset-block + .container-content {
+    position: relative;
+    top: -293px;
+  }
+}
 .short-info {
   background: #b53700 image-url('grdnt-short-info.png') no-repeat right bottom;
   color: #fff;
