@@ -1,13 +1,127 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Главная
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<header class="header-main">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span9">
+        <ul class="nav nav-main">
+          <li><a class="link" href="educational-programs.html"><span>Образовательные программы</span></a></li>
+          <li><a class="link" href="admission.html"><span>Процедура поступления</span></a></li>
+          <li><a class="link" href="faq.html"><span>Вопросы и ответы</span></a></li>
+          <li><a class="link" href="about.html"><span>О нас</span></a></li>
+          <li><a class="link" href="contacts.html"><span>Контакты</span></a></li>
+        </ul>
+      </div>
+      <div class="span3">
+        <div class="text-center">
+          <a href="index-en.html"><i class="icon-custom-flag-en"></i> In English</a>
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span9">
+        <div class="promo">
+          <h1 class="promo-title">Служба инновационного образования</h1>
+          <p class="promo-link pull-right">
+            <span class="link">
+              <i class="icon-custom-crown pull-left"></i>
+              Лучшее инновационное образование в Центральной Азии
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="span3">
+        <div class="pull-right text-center">
+          <a class="logo" href="/">
+            <img class="logo-image" src="dist/images/logo.png" alt="" title="Главная">
+            <span class="logo-slogan">Innovative education services</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="tab-main">
+  <div class="tabbable tabs-below">
+    <div class="tab-content">
+      <div class="tab-pane container active" id="tab1">
+        <header class="tab-main-header">
+          <img class="tab-main-header-img" src="dist/images/teacher-01.png" alt="">
+          <div class="tab-main-header-text">
+            Служба готовит магистрантов по программам <a href="educational-programs-03.html" class="link"><span>мультимедийные технологии</span></a><br> и <a href="educational-programs-02.html" class="link"><span>звуковой инжиниринг</span></a> способных к инновациям,<br> а не повторяющих опыт предыдущих поколений
+          </div>
+        </header>
+        <img src="dist/images/tab-01.jpg" alt="">
+        <div class="tab-main-text">
+          <h1 class="tab-main-title"><a href="educational-programs-03.html" class="link"><span>Мультимедийные технологии</span></a></h1>
+          <p class="tab-main-desc">На курсе вы получите все необходимые знания о компьютерных науках и мультимедийных технологиях с соответствующими теоретическими и практическими знаниями.</p>
+        </div>
+      </div>
+      <div class="tab-pane container" id="tab2">
+        <header class="tab-main-header">
+          <img class="tab-main-header-img" src="dist/images/teacher-01.png" alt="">
+          <div class="tab-main-header-text">
+            Служба готовит магистрантов по программам <a href="educational-programs-03.html" class="link"><span>мультимедийные технологии</span></a><br> и <a href="educational-programs-02.html" class="link"><span>звуковой инжиниринг</span></a> способных к инновациям,<br> а не повторяющих опыт предыдущих поколений
+          </div>
+        </header>
+        <img src="dist/images/tab-01.jpg" alt="">
+        <div class="tab-main-text">
+          <h1 class="tab-main-title"><a href="educational-programs-02.html" class="link"><span>Звуковой инжиниринг</span></a></h1>
+          <p class="tab-main-desc">Магистратура «Звуковой инжиниринг» фокусируется на развитии знаний и навыков в области аудио производства</p>
+        </div>
+      </div>
+    </div>
+    <ul class="nav nav-tabs container text-center">
+      <li class="active">
+        <a class="link-dashed" href="#tab1" data-toggle="tab">
+          <i class="icon-custom-tab1"></i>
+          <span>Мультимедийные технологии</span>
+        </a>
+      </li>
+      <li>
+        <a class="link-dashed" href="#tab2" data-toggle="tab">
+          <i class="icon-custom-tab2"></i>
+          <span>Звуковой инжиниринг</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="container-content">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span7">
+        <div class="news">
+          <h3><a href="about-01.html"><span>Новости</span></a></h3>
+          <ul class="news-list unstyled">
+            <li>
+              <article class="news-item">
+                С 26 апреля по 13 мая 2013 г. состоялся <a href="news-01.html" class="link"><span>визит профессора Школы инжиниринга и дизайна Университета Брунел Др. Вани Гарая</span></a>
+              </article>
+            </li>
+            <li>
+              <article class="news-item">
+                C 13 мая по 2 июня 2013 года состоялся <a href="news-02.html" class="link"><span>визит Петьи Будакова</span></a> (Petyo Budakov) ассистент-профессора Нового Болгарского Университета (New Bulgarian University), директора Международного центра онлайн образования изобразительных искусств. 
+              </article>
+            </li>
+            <li>
+              <article class="news-item">
+                С 1 июня по 16 июня 2013 года ожидается <a href="news-03.html" class="link"><span>визит профессора Роберта Гордона</span></a> из Школы компьютерных наук и цифровых медиа Университета
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="span4 offset1">
+        <div class="events">
+          <h3>События</h3>
+          <p><img src="dist/images/event-04.jpg" alt=""></p>
+          <p><a href="#" class="link"><span>Плановый семинар «Инструментарий успешного Бизнес-лидера».</span></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
