@@ -1,0 +1,18 @@
+.blogs {
+  font-size: 15px;
+}
+.blog-item {
+  margin-bottom: 50px;
+}
+.blog-item-date {
+  font-size: 12px;
+}
+.blog-item-title {
+  margin-top: 0;
+  .link {
+    color: #000;
+    span {
+      border-bottom-color: #000;
+    }
+  }
+}

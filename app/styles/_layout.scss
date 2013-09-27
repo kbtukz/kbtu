@@ -1,0 +1,18 @@
+@import 'compass/layout';
+
+@include sticky-footer(50px, ".container-main", ".footer-root", ".footer-main");
+
+.container {
+  width: 100%;
+  max-width: $gridRowWidth1200;
+  min-width: $gridRowWidth;
+}
+.header-main {
+  position: relative;
+  > .container {
+    padding-top: 57px;
+  }
+}
+body {
+  background-image: image-url('bg-body.jpg');
+}

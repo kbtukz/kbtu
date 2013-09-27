@@ -1,0 +1,29 @@
+.link {
+  span {
+    border-bottom: 1px solid #bcddff;
+  }
+
+  &:hover {
+    text-decoration: none;
+    span {
+      border-bottom-color: $linkColorHover;
+    }
+  }
+}
+
+.link-dashed {
+  @extend .link;
+  span {
+    border-bottom-style: dashed;
+  }
+}
+.link-back {
+  margin-left: -20px;
+}
+.shadowed {
+  @include box-shadow(0 17px 12px -8px #441d10);
+  margin-bottom: 35px;
+}
+.default-font {
+  font-family: $sansFontFamily;
+}

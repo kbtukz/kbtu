@@ -1,0 +1,27 @@
+.nav-main {
+  margin-bottom: 40px;
+  li {
+    @include inline-block(top);
+    margin-left: 18px;
+    &.active {
+      a {
+        color: #000;
+        font-weight: bold;
+        span {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    a {
+      display: block;
+      font-size: 15px;
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+}

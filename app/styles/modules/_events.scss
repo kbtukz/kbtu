@@ -1,0 +1,27 @@
+.event-item {
+  margin-bottom: $baseLineHeight*2;
+  > .pull-left {
+    margin-top: 5px;
+    margin-right: 15px;
+    img {
+      @include box-shadow(0 9px 24px -12px #441d10);
+    }
+  }
+}
+.event-item-text {
+  overflow: hidden;
+}
+.event-item-title {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-top: 0;
+  .link {
+    color: $grayDark;
+    span {
+      border-bottom-color: #8d8d8d;
+    }
+  }
+}
+.event-item-desc {
+  font-size: 15px;
+}
