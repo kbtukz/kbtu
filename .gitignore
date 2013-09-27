@@ -5,3 +5,4 @@ dist
 .DS_Store
 npm-debug.log
 app/bower_components
+_site
